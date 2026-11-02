@@ -32,16 +32,16 @@ nav a{text-decoration:none;font-size:.9rem;padding:6px 14px;border-radius:999px;
 nav a:hover{color:var(--bg);background:var(--accent)}
 /* hero */
 .hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 70px;position:relative}
-.tag{font-family:var(--mono);font-size:.78rem;letter-spacing:.32em;color:var(--muted);text-transform:uppercase;margin-bottom:26px}
+.tag{font-family:var(--mono);font-size:.78rem;letter-spacing:.32em;color:var(--muted);text-transform:uppercase;margin-bottom:24px}
 h1{font-weight:800;font-size:clamp(3.4rem,11vw,9rem);line-height:.95;letter-spacing:-.045em;display:flex;flex-wrap:wrap;gap:.18em;justify-content:center;align-items:center}
 .circled{position:relative;font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent);padding:0 .22em;letter-spacing:-.01em}
 .circled svg{position:absolute;inset:-14% -4% -22% -6%;width:110%;height:136%;overflow:visible;pointer-events:none}
 .circled path{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s .4s ease-out forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
-.sub{font-size:clamp(1.6rem,4.2vw,3.1rem);font-weight:700;letter-spacing:-.03em;margin-top:34px}
+.sub{font-size:clamp(1.6rem,4.2vw,3.1rem);font-weight:700;letter-spacing:-.03em;margin-top:32px}
 .sub b{color:var(--accent);font-weight:700}
-.lede{max-width:560px;color:var(--muted);font-size:1.1rem;margin-top:18px}
-.cta{position:relative;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:34px}
+.lede{max-width:600px;color:var(--muted);font-size:1.1rem;margin-top:16px}
+.cta{position:relative;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:32px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;border:1px solid var(--line);transition:transform .2s,background .2s}
 .btn.main{background:var(--text);color:#13221a;border-color:var(--text)}
 .btn:hover{transform:translateY(-2px);background:var(--accent);color:#08170d;border-color:var(--accent)}
@@ -51,39 +51,42 @@ h1{font-weight:800;font-size:clamp(3.4rem,11vw,9rem);line-height:.95;letter-spac
 .note svg{flex:none;width:56px;height:50px;stroke:var(--muted);fill:none;stroke-width:1.6;stroke-linecap:round}
 @media(max-width:1100px){.note.l{display:none}}
 /* sections */
-section{padding:90px 0}
-h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:44px}
+section{padding:64px 0}
+h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:40px}
 h2 i{font-family:var(--serif);font-weight:400;color:var(--accent);letter-spacing:0}
 .about p{font-size:clamp(1.25rem,2.6vw,1.75rem);line-height:1.45;max-width:780px;letter-spacing:-.015em}
 .about p span{color:var(--accent)}
-.job{display:grid;grid-template-columns:200px 1fr;gap:12px 40px;padding:34px 0;border-top:1px solid var(--line)}
+.job{display:grid;grid-template-columns:200px 1fr;gap:12px 40px;padding:32px 0;border-top:1px solid var(--line)}
 .when{font-family:var(--mono);font-size:.82rem;color:var(--muted)}
 .job h3{font-size:1.5rem;letter-spacing:-.02em;line-height:1.2}
-.job .co{color:var(--accent);margin-bottom:14px;font-size:1.02rem}
+.job .co{color:var(--accent);margin-bottom:16px;font-size:1.02rem}
 .job ul{padding-left:18px;color:#cfe2d4;max-width:640px}
 .job li{margin-bottom:8px}
 .job li::marker{color:var(--accent)}
-.proj{border:1px solid var(--line);background:var(--card);border-radius:22px;padding:34px;display:grid;grid-template-columns:1.1fr 1fr;gap:34px;backdrop-filter:blur(4px)}
-.proj h3{font-size:1.7rem;letter-spacing:-.03em;margin-bottom:10px}
-.proj p{color:#cfe2d4;margin-bottom:10px}
-.big{font-family:var(--serif);font-size:clamp(3rem,8vw,5.2rem);line-height:1;color:var(--accent)}
+.proj{border:1px solid var(--line);background:var(--card);border-radius:22px;padding:32px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;backdrop-filter:blur(4px)}
+.proj h3{font-size:1.7rem;letter-spacing:-.03em;margin-bottom:16px}
+.proj p{color:#cfe2d4;margin-bottom:16px}
+.big{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);line-height:1;color:var(--accent)}
 .big small{display:block;font-family:var(--sans);font-size:.95rem;color:var(--muted);margin-top:8px}
-.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:24px}
-.metric{border-left:2px solid var(--accent);padding:4px 0 4px 16px}
-.metric b{display:block;font-size:2rem;letter-spacing:-.03em;line-height:1.1}
-.metric span{color:var(--muted);font-size:.95rem}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px 34px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:24px}
+.metric{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:8px;backdrop-filter:blur(4px)}
+.metric small{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.metric b{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,3.2vw,2.8rem);line-height:1;letter-spacing:0;white-space:nowrap;color:var(--accent)}
+.metric span{color:var(--muted);font-size:.95rem;line-height:1.5}
+@media(max-width:980px){.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.metrics{grid-template-columns:1fr}}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
 .skills h3{font-size:1.05rem;margin-bottom:12px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips span{border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:.9rem;color:#cfe2d4}
-.ach li{list-style:none;padding:20px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:200px 1fr;gap:8px 40px}
+.ach li{list-style:none;padding:32px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:200px 1fr;gap:8px 40px}
 .ach b{font-size:1.15rem;letter-spacing:-.01em}
 .ach p{color:var(--muted)}
 /* contact */
-.contact{text-align:center;padding-bottom:50px}
+.contact{text-align:center;padding-bottom:64px}
 .contact h2{font-size:clamp(3rem,9vw,7rem);margin-bottom:16px}
-.contact .lede{margin:0 auto 34px}
-.pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.contact .lede{margin:0 auto 32px}
+.pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px}
 .pill{font-family:var(--mono);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:12px 22px;background:rgba(8,23,13,.5);cursor:pointer;color:var(--text);transition:.2s}
 .pill:hover{border-color:var(--accent);color:var(--accent)}
 button.pill{font-family:var(--mono)}
@@ -105,6 +108,27 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
 .avatar::before{inset:-16px}
 .avatar::after{inset:-34px;border-color:rgba(143,200,235,.14)}
 @media(max-width:760px){.avatar{width:150px;height:150px;margin-bottom:30px}}
+.doc{display:inline-block;margin:8px 0 0 0;font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line);transition:border-color .2s}
+.doc:hover{border-color:var(--accent)}
+.job li .doc{margin:0 0 0 6px;white-space:nowrap}
+.job li.hl{list-style:none;margin-left:-18px;padding:12px 16px;border:1px solid rgba(158,245,178,.38);background:rgba(158,245,178,.08);border-radius:12px;color:var(--text)}
+.job li.hl::before{content:"★ ";color:var(--accent)}
+.job li.hl b{color:var(--accent);font-weight:600}
+.about p{color:#9fb9aa}
+.about p b{color:var(--text);font-weight:600}
+.about p span{font-weight:600}
+.job ul,.proj p{color:#a3bcad}
+.job li b,.proj p b,.lede b,.ach p b{color:var(--text);font-weight:600}
+.job li b.n,.proj p b.n,.ach p b.n{color:var(--accent)}
+.ach p b{font-size:inherit;letter-spacing:normal}
+/* alignment */
+h1,h2,h3,.sub,.lede{text-wrap:balance}
+p,li{text-wrap:pretty}
+.job li,.proj p,.ach p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.job,.ach li{align-items:baseline}
+.proj{align-items:center}
+.nw{white-space:nowrap}
+@media(max-width:760px){.job li,.proj p,.ach p{text-align:left;hyphens:manual;-webkit-hyphens:manual}}
 </style>
 </head>
 <body>
@@ -124,7 +148,7 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
     </span>
   </h1>
   <p class="sub">I turn messy user flows into <b>products people finish using.</b></p>
-  <p class="lede">Product management intern working on AI-powered learning at Udhi Technologies. Final-year Electrical and Electronics Engineering student at NIT Uttarakhand.</p>
+  <p class="lede"><b>Product management intern</b> at <b>Udhi Technologies</b>, shaping <span class="nw">AI-powered</span> learning products. Previously at <b>Eshway</b>, where I cut a core workflow from <b class="nw">7 steps to 3</b>. Final-year EEE student at <b>NIT Uttarakhand</b>.</p>
   <div class="cta">
     <a class="btn main" href="#contact">Get in touch</a>
     <a class="btn" href="resume.pdf" download>Download resume</a>
@@ -137,7 +161,7 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
 
 <main>
 <section class="about"><div class="wrap">
-  <p>I break down complex user journeys, find where people drop off, and work with engineers and designers to fix it. I write the <span>PRDs</span>, design and test the <span>UI</span>, and use <span>LLM evaluation</span> to check that AI features do what they promise.</p>
+  <p>I break down complex <b>user journeys</b>, find <b>where people drop off</b>, and work with <b>engineers and designers</b> to fix it. I write the <span>PRDs</span>, design and test the <span>UI</span>, and use <span>LLM evaluation</span> to check that <b>AI features do what they promise</b>.</p>
 </div></section>
 
 <section id="work"><div class="wrap">
@@ -149,11 +173,11 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
       <h3>Product Management Intern, AI EdTech</h3>
       <p class="co">Udhi Technologies</p>
       <ul>
-        <li>Own the design and testing of UI/UX shipped to production, and work with engineering to define requirements for feature improvements.</li>
-        <li>Benchmark user workflows across 5+ platforms and turn the findings into baseline metrics and product suggestions.</li>
-        <li>Turn discovery calls and user feedback into structured PRDs that remove drop-offs.</li>
-        <li>Manage a frontend intern, assigning tasks and tracking turnaround times.</li>
-        <li>Design rubrics and qualitative scoring frameworks to validate the fidelity of LLM outputs.</li>
+        <li>Own the design and testing of <b>UI/UX shipped to production</b>, and work with engineering to define requirements for feature improvements.</li>
+        <li>Benchmark user workflows across <b class="n">5+ platforms</b> and turn the findings into <b>baseline metrics</b> and product suggestions.</li>
+        <li>Turn discovery calls and user feedback into <b>structured PRDs</b> that <b>remove drop-offs</b>.</li>
+        <li><b>Manage a frontend intern</b>, assigning tasks and tracking turnaround times.</li>
+        <li>Design <b>rubrics and qualitative scoring frameworks</b> to validate the fidelity of LLM outputs.</li>
       </ul>
     </div>
   </article>
@@ -164,10 +188,10 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
       <h3>Product &amp; Web Intern</h3>
       <p class="co">Eshway</p>
       <ul>
-        <li>Cut the Live Tracking Dashboard's core workflow from 7 steps to 3, which also reduced backend API latency by 15%.</li>
-        <li>Wrote PRDs that centralized developer update pipelines and removed manual operational syncs.</li>
-        <li>Built automated reporting workflows with the OpenAI and Gemini APIs to log developer activity across Slack and GitHub.</li>
-        <li>Named Intern of the Month (April 2025) and received a Letter of Recommendation.</li>
+        <li>Cut the Live Tracking Dashboard's core workflow <b class="n">from 7 steps to 3</b>, which also reduced backend API <b class="n">latency by 15%</b>.</li>
+        <li>Wrote <b>PRDs</b> that centralized developer update pipelines and <b>removed manual operational syncs</b>.</li>
+        <li>Built automated reporting workflows with the <b>OpenAI and Gemini APIs</b> to log developer activity across Slack and GitHub.</li>
+        <li class="hl">Named <b>Intern of the Month (April 2025)</b> and received a <b>Letter of Recommendation</b>. <a class="doc" href="https://drive.google.com/file/d/1wyZ10DxcBuG6Nntf30Bn6npY255E_mhV/view?usp=sharing" target="_blank" rel="noopener">View letter ↗</a></li>
       </ul>
     </div>
   </article>
@@ -190,26 +214,25 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
   <article class="proj">
     <div>
       <h3>Battledore</h3>
-      <p>A tournament management platform (2025). I mapped existing setup flows, interviewed organizers to find coordination bottlenecks, and defined the MVP feature specs.</p>
-      <p>I then shipped an automated bracket-generation MVP so event managers no longer edit brackets by hand.</p>
+      <p>A tournament management platform (2025). I mapped existing setup flows, <b>interviewed organizers</b> to find coordination bottlenecks, and defined the <b>MVP feature specs</b>.</p>
+      <p>I then shipped an <b>automated bracket-generation MVP</b> so event managers no longer edit brackets by hand.</p>
     </div>
     <div class="big">2 hrs → 10 min<small>Tournament setup time, a 90% reduction</small></div>
   </article>
   <article class="proj">
     <div>
       <h3>Course Selling Platform Backend</h3>
-      <p>A backend for a multi-tiered learning platform (2024). I defined the RBAC user roles and product requirements so onboarding and feature access stay simple.</p>
-      <p>I then turned business and monetization requirements into scalable REST APIs and MongoDB schemas, which removed checkout drop-offs.</p>
+      <p>A backend for a multi-tiered learning platform (2024). I defined the <b>RBAC user roles</b> and <b>product requirements</b> so onboarding and feature access stay simple.</p>
+      <p>I then turned business and monetization requirements into scalable <b>REST APIs and MongoDB schemas</b>, which <b>removed checkout drop-offs</b>.</p>
       <a class="pill" href="https://github.com/alok5code/Project-Course-Selling-App-Backend" target="_blank" rel="noopener">View on GitHub ↗</a>
     </div>
     <div class="big">Roles → APIs<small>RBAC, REST APIs and MongoDB schemas for a course marketplace</small></div>
   </article>
   <div class="metrics">
-    <div class="metric"><b>7 → 3 steps</b><span>Live Tracking Dashboard workflow at Eshway</span></div>
-    <div class="metric"><b>5+ platforms</b><span>Benchmarked for user workflows at Udhi</span></div>
-    <div class="metric"><b>IEEE DELCON'26</b><span>First-author paper accepted after peer review</span></div>
-    <div class="metric"><b>−15% latency</b><span>Backend API latency after the Eshway workflow rework</span></div>
-    <div class="metric"><b>Intern of the Month</b><span>Eshway, April 2025</span></div>
+    <div class="metric"><small>Eshway</small><b>7 → 3</b><span>Steps in the core Live Tracking Dashboard workflow</span></div>
+    <div class="metric"><small>Eshway</small><b>−15%</b><span>Backend API latency after the workflow rework</span></div>
+    <div class="metric"><small>Udhi Technologies</small><b>5+</b><span>Platforms benchmarked for user workflows</span></div>
+    <div class="metric"><small>Intern of the Month</small><b>Apr 2025</b><span>Eshway, plus a Letter of Recommendation</span></div>
   </div>
 </div></section>
 
@@ -224,16 +247,16 @@ footer{text-align:center;font-family:var(--mono);font-size:.74rem;letter-spacing
 </div></section>
 
 <section><div class="wrap">
-  <h2>Beyond the <i>backlog</i></h2>
+  <h2>Academic <i>highlights</i></h2>
   <ul class="ach" style="padding:0">
-    <li><span class="when">DELCON'26</span><div><b>First-author IEEE paper</b><p>Robust Super-Twisting Sliding Mode Control for DC-DC Buck Converters, accepted at a 24% acceptance rate.</p></div></li>
-    <li><span class="when">IOQM 2020</span><div><b>Top 300 regional rank</b><p>Ranked in the top 300 in the Indian Olympiad Qualifier in Mathematics.</p></div></li>
+    <li><span class="when">DELCON'26</span><div><b>First-author IEEE paper</b><p>Peer-reviewed research on Robust Super-Twisting Sliding Mode Control for DC-DC Buck Converters, accepted at a <b class="n">24% acceptance rate</b>.</p><a class="doc" href="https://drive.google.com/file/d/1ZZ9NsPKp1X3PV-MGQgnyvSliaQuva4WZ/view?usp=sharing" target="_blank" rel="noopener">View acceptance letter ↗</a></div></li>
+    <li><span class="when">IOQM 2020</span><div><b>Certificate of Merit</b><p>Ranked in the <b class="n">top 300 regionally</b> in the Indian Olympiad Qualifier in Mathematics.</p><a class="doc" href="https://drive.google.com/file/d/1a9ODWv8MZ_WbThCOlX-9FQzLhrlB0pgM/view?usp=sharing" target="_blank" rel="noopener">View certificate ↗</a></div></li>
   </ul>
 </div></section>
 
 <section class="contact" id="contact"><div class="wrap">
   <h2>Let's work <i>together</i></h2>
-  <p class="lede">Internships, full-time product roles, or a product problem worth solving. Send me a note.</p>
+  <p class="lede"><b>Internships</b>, <b>full-time product roles</b>, or a product problem worth solving. Send me a note.</p>
   <a class="btn main" href="mailto:alokgairola5@gmail.com">Email Alokk</a>
   <div class="pills">
     <button class="pill" id="copy" type="button">Copy email</button>
